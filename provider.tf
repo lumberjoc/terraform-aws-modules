@@ -4,12 +4,12 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-  }  
-    backend "s3" {
-        bucket = "mybucket"
-        key    = "tf-module-state/dev"
-        region = "us-east-1"
-    }
+  }
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "tf-module-state/dev"
+    region = "us-east-1"
+  }
 }
 
 # Configure the AWS Provider
